@@ -83,17 +83,4 @@ public class BankAccountTests
         Assert.That(result, Is.EqualTo("Error: Insufficient funds available"));
         Assert.That(account.Balance, Is.EqualTo(1000.00m));
     }
-
-    [Test]
-    public void Balance_WithTwoDecimalPositions_CorrectFormat()
-    {
-        // Arrange
-        var account = new BankAccount(1000.00m);
-
-        // Act
-        string result = account.BalanceFormated();
-
-        // Assert
-        Assert.That(result, Is.EqualTo("1000,00"));
-    }
 }

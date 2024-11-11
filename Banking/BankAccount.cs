@@ -71,13 +71,4 @@ public class BankAccount
         balance -= amount;
         return "Withdrawal successful";
     }
-
-    /// <summary>
-    /// Returns the current account balance formatted to two decimal places.
-    /// </summary>
-    /// <returns>A string representing the formatted account balance.</returns>
-    public string BalanceFormated()
-    {
-        return balance.ToString("F2");
-    }
 }
